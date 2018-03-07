@@ -1,0 +1,39 @@
+<!-- <h2>{{message.subject}}</h2> 
+ <p>From: {{message.from}}</p>
+<p>Content:  {{message.content}}</p> 
+<mark mk="markeImportantce()" ng-style ="getStyle()"  >Important</mark><br/>
+
+<button ng-click="delete()">Delete</button>
+<button id="reply" ng-click="replyarea()">Reply</button>
+
+<button ng-click="back()">Back</button><br /><br />
+<div ng-show="visibility">
+    <textarea ng-model="msg"></textarea>
+    <button ng-click="reply()">Sent</button>
+</div> -->
+
+<table class="table" >
+        <thead>
+            <th>Subject</th>
+            <th>From</th>
+            <th>Content</th>
+            <th>Mark</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{message.subject}}</td>
+                <td>{{message.from}}</td>
+                <td> {{message.content}}</td> 
+                <td>
+            <mark mk="markeImportantce()" ng-style ="getStyle()"  >Important</mark><br/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button ng-click="delete()">Delete</button>
+    <button id="reply" ng-click="replyarea()">Reply</button>
+    <button ng-click="back()">Back</button><br /><br />
+    <div ng-show="visibility">
+     <textarea class="form-control" ng-model="msg" rows="3"></textarea>
+    <button ng-click="reply()">Sent</button>
+    </div>

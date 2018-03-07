@@ -1,0 +1,24 @@
+<!-- <p>Username:</p>
+<input type="text" placeholder="Username" ng-model="user.username" ><br>
+{{username}}
+<p>Password:</p>
+<input type="text" placeholder="Password" ng-model="user.password" ><br> 
+{{password}}
+<button type="submit" ng-click="validMessage(user)">Submit</button> -->
+<p>Not a member?<a href="#/register">Register here</a></p> 
+
+
+<form ng-submit="validMessage(user)">
+    <div class="col-xs-6">
+            <label>Username</label>
+            <input type="text" class="form-control" ng-model="user.username">
+
+            <label>Password</label>
+            <input type="password" class="form-control" ng-model="user.password">
+
+            <br>
+            <button class="btn btn-primary" type="submit">Login</button>
+            <br><br>
+            <!-- <p ng-if="counter" class="text-success"> User found. Redirecting...</p> -->
+    </div>
+</form>

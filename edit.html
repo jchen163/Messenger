@@ -1,0 +1,39 @@
+<h1>Edit profile</h1>
+<!-- <p>{{successMsg}}</p>
+    <p>Username:</p>
+    <input type="text" placeholder={{user.username}} ng-model="user.username" ><br>
+    <p>Password:</p>
+    <input type="text" placeholder={{user.password}} ng-model="user.password" ><br> 
+    <p>Firstname:</p>
+    <input type="text" placeholder={{user.firstname}} ng-model="user.firstname" ><br>
+    <p>Lastname:</p>
+    <input type="text" placeholder={{user.lastname}} ng-model="user.lastname" ><br>
+    <p>Email:</p>
+    <input type="text" placeholder={{user.email}} ng-model="user.email" ><br> 
+    <p>Phone:</p>
+    <input type="text" placeholder={{user.phone}} ng-model="user.phone" ><br> 
+    <p>Location:</p>
+    <input type="text" placeholder={{user.location}} ng-model="user.location" ><br> 
+
+<button  ng-click="save()">Save</button> -->
+<a href="#/profile/{{user.username}}">Back</a>
+<!-- <button  ng-click="back()">Back</button> -->
+
+
+<form name="editProfile" ng-submit="save()">
+    <label>Username</label>
+    <input type="text" class="form-control" placeholder={{user.username}} ng-model="user.username">
+    <label>Password</label>
+    <input type="text" class="form-control" placeholder={{user.password}} ng-model="user.password">
+    <label>Firstname</label>
+    <input type="text" class="form-control" placeholder={{user.firstname}} ng-model="user.firstname">
+    <label>Lastname</label>
+    <input type="text" class="form-control"  placeholder={{user.lastname}} ng-model="user.lastname">
+    <label>Email</label>
+    <input type="text" class="form-control" placeholder={{user.email}} ng-model="user.email" >
+    <label>Phone</label>
+    <input type="text" class="form-control" placeholder={{user.phone}} ng-model="user.phone">
+    <label>Location</label>
+    <input type="text" class="form-control" placeholder={{user.location}} ng-model="user.location">
+    <input type="submit" value="Save">
+</form>
